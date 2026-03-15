@@ -1,3 +1,11 @@
-*.conf linguist-language=Nginx
-*.conf linguist-language=Nix
+# Nginx configuration files
+nginx/*.conf linguist-language=Nginx
+nginx/*.nginx linguist-language=Nginx
+sites-available/*.conf linguist-language=Nginx
+sites-available/*.nginx linguist-language=Nginx
+*.nginx.conf linguist-language=Nginx
+*.nginx linguist-language=Nginx
 
+# Optional: ignore generated configs from language stats
+nginx/generated/*.conf linguist-vendored
+nginx/generated/*.nginx linguist-vendored
